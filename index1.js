@@ -24,7 +24,7 @@ function shopping_cart_modal(book){
                         <table class="table table-image" id="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">cover</th>
+                                    <th scope="col">COVER</th>
                                     <th scope="col">BOOK</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
