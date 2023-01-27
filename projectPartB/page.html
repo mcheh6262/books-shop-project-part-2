@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>orders</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+
+</head>
+<body>
+    <h1>orders</h1>
+    <table id="books" class="table table-success table-striped">
+        <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>publish year</th>
+    <th>price</th>
+    <th>left in stock</th>
+    <th>action</th>
+
+</tr>
+<tr>
+    <th>1</th>
+    <th>Structure and Interpretation of Computer Programs</th>
+    <th>2013</th>
+    <th>70</th>
+    <th>300</th>
+    <th> 
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"class="btn btn-default btn-sm">
+        <span class="glyphicon">&#x270f;</span></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="save" data-dismiss="modal"></button>
+            <button type="button" class="close" data-dismiss="modal"></button>
+      
+       
+            <div>
+              <label for="recipient-name" class="col-form-label">FIRST NAME:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div><br>
+          </div>
+          <div>
+            <label for="message-text" class="col-form-label">LAST NAME:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-number" class="col-form-label">Credit card number:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+       
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    
+  </div>
+        
+      </div>
+          <button onclick="delet()" type="button" class="btn btn-default btn-sm">
+            <p>Unicode:
+                <span class="glyphicon">&#xe020;</span>
+              </p>  </button>
+       </th>
+</tr>
+<tr>
+    <th>2</th>
+    <th>JavaScript Coding for Teens</th>
+    <th>2000</th>
+    <th>60</th>
+    <th>100</th>
+    <th> 
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"class="btn btn-default btn-sm">
+        <span class="glyphicon">&#x270f;</span></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="save" data-dismiss="modal"></button>
+            <button type="button" class="close" data-dismiss="modal"></button>
+       
+            <div>
+              <label for="recipient-name" class="col-form-label">FIRST NAME:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div><br>
+          </div>
+          <div>
+            <label for="message-text" class="col-form-label">LAST NAME:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-number" class="col-form-label">Credit card number:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+       
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    
+  </div>
+        
+      </div>
+        <button onclick="delet()" type="button" class="btn btn-default btn-sm">
+          <p>Unicode:
+              <span class="glyphicon">&#xe020;</span>
+            </p>  </button>
+     </th>
+</tr>
+<tr>
+    <th>3</th>
+    <th>Getting the Most Out of Node.js Frameworks</th>
+    <th>1990</th>
+    <th>65</th>
+    <th>150</th>
+    <th> 
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"class="btn btn-default btn-sm">
+        <span class="glyphicon">&#x270f;</span></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="save" data-dismiss="modal"></button>
+            <button type="button" class="close" data-dismiss="modal"></button>
+       
+            <div>
+              <label for="recipient-name" class="col-form-label">FIRST NAME:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div><br>
+          </div>
+          <div>
+            <label for="message-text" class="col-form-label">LAST NAME:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-number" class="col-form-label">Credit card number:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+       
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    
+  </div>
+        
+      </div>
+        <button onclick="delet()" type="button" class="btn btn-default btn-sm">
+          <p>Unicode:
+              <span class="glyphicon">&#xe020;</span>
+            </p>  </button>
+     </th>
+</tr>
+<tr>
+    <th>4</th>
+    <th>The Complete JavaScript Course From Zero to Expert!</th>
+    <th>2002</th>
+    <th>80</th>
+    <th>200</th>
+    <th> 
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"class="btn btn-default btn-sm">
+        <span class="glyphicon">&#x270f;</span></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="save" data-dismiss="modal"></button>
+            <button type="button" class="close" data-dismiss="modal"></button>
+       
+            <div>
+              <label for="recipient-name" class="col-form-label">FIRST NAME:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div><br>
+          </div>
+          <div>
+            <label for="message-text" class="col-form-label">LAST NAME:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-number" class="col-form-label">Credit card number:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+       
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    
+  </div>
+        
+      </div>
+        <button onclick="delet()" type="button" class="btn btn-default btn-sm">
+          <p>Unicode:
+              <span class="glyphicon">&#xe020;</span>
+            </p>  </button>
+     </th>
+</tr>
+<th>5</th>
+<th>The Complete JavaScript Course From Zero to Expert!</th>
+<th>1900</th>
+<th>40</th>
+<th>20</th>
+<th> 
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"class="btn btn-default btn-sm">
+        <span class="glyphicon">&#x270f;</span></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="save" data-dismiss="modal"></button>
+            <button type="button" class="close" data-dismiss="modal"></button>
+       
+            <div>
+              <label for="recipient-name" class="col-form-label">FIRST NAME:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div><br>
+          </div>
+          <div>
+            <label for="message-text" class="col-form-label">LAST NAME:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+          <div>
+            <label for="recipient-number" class="col-form-label">Credit card number:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div><br>
+       
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    
+  </div>
+        
+      </div>
+
+      
+ </th>
+</tr>
+
+</table >
+
+
+   <script src="index.js"></script>
+</body>
+</html>

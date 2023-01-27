@@ -1,0 +1,20 @@
+div{
+    color: red
+}
+
+#card-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-img-top{
+    height: 200px;
+    width: 50px;
+}
+
+.card{
+
+    height: 270px;
+    width: 120px;
+}
